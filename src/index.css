@@ -256,7 +256,7 @@ body {
 /* RESPONSIVE -------------------------------------------- */
 
 @media (max-width: 768px) {
-  /* Menu pizzas: single column */
+  /* Menu pizzas */
   .pizzas {
     grid-template-columns: 1fr;
   }
@@ -270,24 +270,23 @@ body {
     justify-content: center;
   }
 
-  /* Header lines as flex items so they don't cut text */
   .header h1::before,
   .header h1::after {
     content: '';
-    flex: 1;                     /* take up available space */
+    flex: 1;                     
     height: 2px;
     background-color: #edc84b;
   }
 
   .header > p {
-    font-size: 1.5rem;           /* keep same size */
+    font-size: 1.5rem;          
     width: 90%;
   }
 
   /* Favourites section */
   .favpizza {
-    flex-direction: column;       /* stack image above text */
-    align-items: center;          /* center everything */
+    flex-direction: column;       
+    align-items: center;          
     text-align: center;
     gap: 1.6rem;
   }
@@ -303,7 +302,6 @@ body {
     text-align: center;
   }
 
-  /* Favlist paragraph width only, keep font size */
   .favlist > p {
     width: 90%;
   }
